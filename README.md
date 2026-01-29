@@ -34,7 +34,7 @@ The optimal pass is executed slightly later than the actual timing, allowing off
 ## Installation and Setup
 - This Paper was developed with Python 3.11.10.
 ```
-git clone https://github.com/leemingo/value-pausa.git
+git clone https://github.com/leemingo/mitssac-pausa.git
 cd value-pausa
 pip install -r requirements.txt
 ```
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 ## Project Structure
 
 ```
-🗂️ value-pausa/
+🗂️ mitssac-pausa/
 ├── 🗂️ data
 │   ├── 🗂️ dfl # DFL DataSet
         ├── 🗂️ raw
@@ -117,7 +117,7 @@ python calculate_obso.py --provider dfl --unit trace --game_id DFL-MAT-J03WMX --
 python calculate_obso.py --provider dfl --unit virtual --game_id DFL-MAT-J03WMX --data_dir ./data/dfl/elastic --output_dir ./data/dfl/obso --n_jobs -1
 ```
 
-### 3. Run Analysis [Notebook 3](https://github.com/leemingo/value-pausa/blob/main/notebooks/3-analysis-pausa.ipynb)
+### 3. Run Analysis [Notebook 3](https://github.com/leemingo/mitssac-pausa/blob/main/notebooks/3-analysis-pausa.ipynb)
 - Compute PAUSA, xT, POP, and related metrics.
 - Perform quantitative analysis (e.g., correlations between metrics).
 - Perform qualitative analysis, including player- and team-level rankings
@@ -127,7 +127,7 @@ This project is developed for research purposes.
 
 ## Research
 please consider citing the following papers:
-- Minho Lee, Geonhee Jo, Miru Hong, Pascal Bauer, and Sang-Ki Ko. **Valuing La Pausa: Quantifying Optimal Pass Timing Beyond Speed.** In 2026 MIT Sloan Sports Analytics Conference. <br/>[ [paper](https://www.sloansportsconference.com/conference/2026-conference) | [github](https://github.com/leemingo/value-pausa.git) ]
+- Minho Lee, Geonhee Jo, Miru Hong, Pascal Bauer, and Sang-Ki Ko. **Valuing La Pausa: Quantifying Optimal Pass Timing Beyond Speed.** In 2026 MIT Sloan Sports Analytics Conference. <br/>[ [paper](https://www.sloansportsconference.com/conference/2026-conference) | [github](https://github.com/leemingo/mitssac-pausa.git) ]
 
 ## Affiliations
 This research is conducted by **[Korea AI Research Society for Sports (KAISports)](https://sites.google.com/view/kaisport)**.  
