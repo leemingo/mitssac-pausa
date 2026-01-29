@@ -3,7 +3,7 @@ This is the repository for valuing optimal pass timing for football players usin
 
 ---
 
-### La Pausa Example
+## La Pausa Example
 The optimal pass is executed slightly later than the actual timing, allowing off-ball spaces to fully develop. The animation shows the full play context, while the snapshots compare the actual and delayed pass moments.
 
 <p align="center">
@@ -31,7 +31,7 @@ The optimal pass is executed slightly later than the actual timing, allowing off
 
 ---
 
-## installation and environment
+## Installation and Setup
 - This Paper was developed with Python 3.11.10.
 ```
 git clone https://github.com/leemingo/value-pausa.git
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ```
 🗂️ value-pausa/
 ├── 🗂️ data
-│   ├── 🗂️ dfl             # DFL DataSet
+│   ├── 🗂️ dfl # DFL DataSet
         ├── 🗂️ raw
             ├── 🗂️ DFL-MAT-J03WMX # Match ID
             │   ├── 📄 DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml       # Match metadata
@@ -72,10 +72,10 @@ pip install -r requirements.txt
                     │   ├── 📄 virtual_obso.pkl 
                     │   ├── 📄 ... 
             ├── 🗂️ Other Match ID ... 
-│   └── 🗂️ static          # Static data (e.g., Transition.csv, EPV_grid.csv, xT_grid.json)
-├── 🗂️ elastic               # Synchronization of tracking and event data
-│   ├── 🗂️ sync  # Synchronization Logic
-│   ├── 🗂️ tools # Unified Spadl format
+│   └── 🗂️ static # Static data (e.g., Transition.csv, EPV_grid.csv, xT_grid.json)
+├── 🗂️ elastic                # Synchronization of tracking and event data
+│   ├── 🗂️ sync               # Synchronization Logic
+│   ├── 🗂️ tools              # Unified Spadl format
 │   ├── 📄 convert_elastic.py # Main synchronization script
 │   └── ...
 ├── 🗂️ notebooks               
@@ -83,19 +83,19 @@ pip install -r requirements.txt
 │   ├── 2-calculate-pausa.ipynb # PAUSA computation and visualization
 │   ├──  3-analysis-pausa.ipynb # Player- and team-level PAUSA analysis
 ├── calculate_obso.py # Main OBSO computation
-├── loader.py # Customized dataloader for PAUSA
-├── obso.py # OBSO computation logic
-├── pitch_control.py # Pitch control model
-├── xthreat.py # Expected Threat (xT) computation
+├── loader.py         # Customized dataloader for PAUSA
+├── obso.py           # OBSO computation logic
+├── pitch_control.py  # Pitch control model
+├── xthreat.py        # Expected Threat (xT) computation
 └── ...
 ```
 
-## How to access data
-- Due to restrictions, we cannot redistribute the full DFL dataset. However, we provide seven publicly available matches, which are sufficient to reproduce the main experiments in this repository.
+## Data Usage
+- Unfortunately, we cannot share the full DFL dataset. However, we provide seven publicly available matches, which are sufficient to reproduce the main experiments in this repository.
 - Public dataset: [DFL DataSet](https://springernature.figshare.com/articles/dataset/-An_integrated_dataset_of_spatiotemporal_and_event_data_in_elite_soccer/28196177).
 - Download the public DFL matches from the link above. Organize each match using its match ID as the directory name.
 
-## Usage
+## Running the Code
 
 ### 1. Elastic Data Preprocessing
 - [The Elastic Framework](https://github.com/hyunsungkim-ds/elastic) operates on data converted into a SPADL format.
@@ -131,4 +131,3 @@ please consider citing the following papers:
 
 ## Affiliations
 This research is conducted by **[Korea AI Research Society for Sports (KAISports)](https://sites.google.com/view/kaisport)**.  
-# mitssac-pausa
