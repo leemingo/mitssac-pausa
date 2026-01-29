@@ -21,10 +21,10 @@ The optimal pass is executed slightly later than the actual timing, allowing off
   </tr>
   <tr>
     <td align="center">
-      <img src="data/dfl/obso/DFL-MAT-J03WMX/animation/output/frame_43681.png" width="420"/>
+      <img src="data/dfl/obso/DFL-MAT-J03WMX/animation/actual_pass.png" width="420"/>
     </td>
     <td align="center">
-      <img src="data/dfl/obso/DFL-MAT-J03WMX/animation/output/frame_43706.png" width="420"/>
+      <img src="data/dfl/obso/DFL-MAT-J03WMX/animation/optimal_pass.png" width="420"/>
     </td>
   </tr>
 </table>
