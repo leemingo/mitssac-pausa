@@ -1,0 +1,11 @@
+fastparquet
+ffmpeg
+kloppy
+matplotlib
+numpy
+pandas
+pandera
+pyarrow
+py7zr
+scipy
+tqdm
