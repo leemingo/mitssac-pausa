@@ -77,7 +77,7 @@ def single_processing_elastic(match_id_list, root_dir, elastic_dir):
             if "bepro" in root_dir.lower():
                 input_events = match.get_alive_events(input_events, input_tracking)
             
-            syncer = ELASTIC(raw_tracking, input_tracking)
+            syncer = ELASTIC(input_events, input_tracking)
             syncer.run()
         except Exception as e:
             print(f"Error processing match {match_id}: {e}")
