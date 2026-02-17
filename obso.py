@@ -371,13 +371,19 @@ def generate_virtual_trajectory(tracking_data, pass_frame, receive_frame, before
                     # 패스 시점에 패스가 아닌 상황을 가정하여 1프레임 전의 위치/속도를 기반으로 pass_frame 이후 프레임의 위치 예측
                     new_x = tracking_data.at[pass_frame-1, p+'_x'] + tracking_data.at[pass_frame-1, p+'_vx'] * (frame - pass_frame + 1) / 25
                     new_y = tracking_data.at[pass_frame-1, p+'_y'] + tracking_data.at[pass_frame-1, p+'_vy'] * (frame - pass_frame + 1) / 25
+                    new_vx = tracking_data.at[pass_frame-1, p+'_vx']
+                    new_vy = tracking_data.at[pass_frame-1, p+'_vy']
                 except:
                     # 1프레임 전의 데이터가 없는 경우, 패스 시점의 위치/속도를 기반으로 pass_frame 이후 위치 예측
                     new_x = tracking_data.at[pass_frame, p+'_x'] + tracking_data.at[pass_frame, p+'_vx'] * (frame - pass_frame) / 25
                     new_y = tracking_data.at[pass_frame, p+'_y'] + tracking_data.at[pass_frame, p+'_vy'] * (frame - pass_frame) / 25
-                    
+                    new_vx = tracking_data.at[pass_frame, p+'_vx']  
+                    new_vy = tracking_data.at[pass_frame, p+'_vy']
+
                 new_row[p+'_x'] = new_x
                 new_row[p+'_y'] = new_y
+                new_row[p+'_vx'] = new_vx
+                new_row[p+'_vy'] = new_vy
             tracking_data_ghost.append(new_row)
         else:
             pass # skip if frame not in tracking data index
