@@ -90,6 +90,10 @@ pip install -r requirements.txt
 └── ...
 ```
 
+## Architecture
+
+Open [`architecture.html`](architecture.html) in a browser to explore the C4 architecture diagrams (System Context, Container).
+
 ## Data Usage
 - Unfortunately, we cannot share the full DFL dataset. However, we provide seven publicly available matches, which are sufficient to reproduce the main experiments in this repository.
 - Public dataset: [DFL DataSet](https://springernature.figshare.com/articles/dataset/-An_integrated_dataset_of_spatiotemporal_and_event_data_in_elite_soccer/28196177).
@@ -123,7 +127,8 @@ python calculate_obso.py --provider dfl --unit virtual --game_id DFL-MAT-J03WMX 
 - Perform qualitative analysis, including player- and team-level rankings
 
 ## License
-This project is developed for research purposes.
+
+[Apache License 2.0](LICENSE) — see [NOTICE](NOTICE) for third-party attribution.
 
 ## Research
 please consider citing the following papers:
