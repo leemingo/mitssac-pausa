@@ -1,0 +1,73 @@
+mitssac-pausa (Valuing La Pausa)
+Copyright 2026 Minho Lee, Geonhee Jo, Miru Hong, Pascal Bauer,
+Sang-Ki Ko
+
+This product includes software adapted from third-party sources.
+
+Vendored Libraries
+------------------
+
+matplotsoccer — Soccer pitch visualization (MIT License).
+Copyright (c) Tom Decroos.
+The files matplotsoccer.py and elastic/tools/matplotsoccer.py are
+modified copies of this package.
+See: https://github.com/TomDecroos/matplotsoccer
+
+Adapted Code
+-------------
+
+pitch_control.py is based on LaurieOnTracking (MIT License).
+Copyright (c) Laurie Shaw.
+See: https://github.com/Friends-of-Tracking-Data-FoTD/LaurieOnTracking
+
+The elastic/ directory is based on the ELASTIC framework.
+Copyright (c) Hyunsung Kim.
+See: https://github.com/hyunsungkim-ds/elastic
+
+Third-Party Data Attribution
+----------------------------
+
+Match tracking and event data used in this project are derived from
+the DFL public dataset, licensed under the Creative Commons
+Attribution 4.0 International (CC-BY 4.0) license.
+Citation: Bassek, M. et al. (2025). "An integrated dataset of
+spatiotemporal and event data in elite soccer." Scientific Data,
+Nature.
+See: https://springernature.figshare.com/articles/dataset/-An_integrated_dataset_of_spatiotemporal_and_event_data_in_elite_soccer/28196177
+
+Third-Party Libraries
+---------------------
+
+The following open-source libraries are used at runtime but are not
+vendored into this repository:
+
+kloppy — Standardizing soccer tracking and event data (BSD-3-Clause License).
+Copyright (c) kloppy contributors.
+See: https://github.com/PySport/kloppy
+
+socceraction — SPADL conversion and action valuation (MIT License).
+Copyright (c) DTAI Research KU Leuven.
+See: https://github.com/ML-KULeuven/socceraction
+
+mplsoccer — Soccer pitch plotting and visualization (MIT License).
+Copyright (c) mplsoccer contributors.
+See: https://github.com/andrewRowlinson/mplsoccer
+
+Academic References
+-------------------
+
+The pitch control methodology is described in:
+Spearman, W. (2018). "Beyond Expected Goals." MIT Sloan Sports
+Analytics Conference.
+See: http://www.sloansportsconference.com/wp-content/uploads/2018/02/2002.pdf
+
+The ELASTIC event-tracking data synchronization methodology is
+described in:
+Kim, H. et al. (2025). "ELASTIC: Event-Level Alignment of
+Synchronized Tracking and InferCed data."
+See: https://arxiv.org/abs/2508.09238
+
+This work itself is described in:
+Lee, M. et al. (2026). "Valuing La Pausa: Quantifying Optimal Pass
+Timing Beyond Speed." MIT Sloan Sports Analytics Conference.
+See: https://github.com/leemingo/mitssac-pausa
